@@ -55,8 +55,7 @@ a {
 }
 
 li,
-a,
-button {
+a {
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -89,7 +88,7 @@ header {
 
 
 
-header>a {
+header a {
   padding: 9px 20px;
   background-color: #e0e0e0;
   color: #000;
