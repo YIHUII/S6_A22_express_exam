@@ -1,0 +1,123 @@
+/* 載入字型 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600&display=swap');
+
+/* 移除瀏覽器預設值及設定共用樣式 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+  /* 設定字型 */
+  font-size: 16px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  line-height: 0.9;
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  /* 拿掉前方圈圈 */
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+  /* 拿掉底線 */
+}
+
+li,
+a,
+button {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* 設定區塊寬度一致並置中 */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 92px;
+}
+
+
+/* navigation  */
+header {
+  /*固定置頂*/
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  /* 陰影 */
+  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+
+
+header>a {
+  padding: 9px 20px;
+  background-color: #e0e0e0;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-index {
+  margin-right: auto;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav-links li a {
+  padding: 9px 20px;
+  background-color: #e0e0e0;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header a:hover,
+.nav-links li a:hover {
+  background-color: #747474;
+  color: #fff;
+}
